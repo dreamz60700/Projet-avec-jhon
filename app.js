@@ -2,7 +2,7 @@ let nom = document.querySelector('.nom')
 let message = document.querySelector('#texte1')
 
 let jsonU = fetch("utilisateurs.json")
-let s
+
 jsonU.then((res) => {
     res.json().then((res) => {
 
