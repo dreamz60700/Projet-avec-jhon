@@ -43,7 +43,7 @@ let recherche = document.getElementById('inrecherche').value
 
 
 /*res.forEach(utilisateur => {
-                    console.log(utilisateur)
-                })
-                
-                nom.textContent = res.utilisateur[0].prenom + " " + res.utilisateur[0].name*/
+        console.log(utilisateur)
+    })
+
+nom.textContent = res.utilisateur[0].prenom + " " + res.utilisateur[0].name*/
