@@ -1,3 +1,6 @@
+//3 nom dans le json pour tester le code
+//henry, blanc, petit
+
 //dom du texte des cadre
 let nom = document.querySelector('.nom')
 let message = document.querySelector('#texte1')
@@ -7,6 +10,7 @@ let btnRecherche = document.querySelector('.loupe')
 btnRecherche.onclick = () => {
 //dom input recherche
 let recherche = document.getElementById('inrecherche').value
+recherche = recherche.charAt(0).toUpperCase() + recherche.substring(1).toLowerCase()
 
     if (recherche == "") {
 
@@ -27,12 +31,8 @@ let recherche = document.getElementById('inrecherche').value
                         console.log('erreur')
                     }
 
-                    console.log(utilisateur.name)
-                    console.log(utilisateur.prenom)
-                    console.log(utilisateur.message)
                 });
 
-                console.log(res.utilisateur)
         
             })
         })
@@ -41,9 +41,3 @@ let recherche = document.getElementById('inrecherche').value
 
 }
 
-
-/*res.forEach(utilisateur => {
-        console.log(utilisateur)
-    })
-
-nom.textContent = res.utilisateur[0].prenom + " " + res.utilisateur[0].name*/
